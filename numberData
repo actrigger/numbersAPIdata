@@ -1,0 +1,80 @@
+function NumberObject(header, subheader, text){
+    this.header = header;
+    this.subheader = subheader;
+    this.text = text;
+}
+
+var one = new NumberObject("One", 1, "Often, the number 1 is confused as a prime number. But that's not the case—one does not fulfill the requirements to be prime (being divisible by both 1 and itself). Divide 1 by 1 and you get…1. Nothing has been divided.");
+var two = new NumberObject("Two", 2, "Two is the smallest prime number, and the only even prime number (for this reason it is sometimes called 'the oddest prime'. The next prime is three. Two and three are the only two consecutive prime numbers.");
+var three = new NumberObject("Three", 3, "Did you know that  if you take any number, and multiply it by three. Then, take the digits of that new number and add them all together. Whatever number that equals will always be divisible by three, no matter what number you started with?");
+var four = new NumberObject("Four", 4, "You probably never thought about this before, but there is only one number spelled with the same number of letters as itself. Can you guess which one? No? Well, It's 4.");
+var five = new NumberObject("Five", 5, "Confucius said: “To practice five things under all circumstances constitutes perfect Virtue; these five are gravity, generosity of soul, sincerity, earnestness, and kindness. Also, Five was Coco Chanel’s lucky number. In 1921, she introduced Chanel No. 5 on the 5th day of the 5th month.");
+var six = new NumberObject("Six", 6, "In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors. By this rule, six is the smallest perfect number. Here's an example to clarify:1 + 2 + 3 = 6.");
+var seven = new NumberObject("Seven", 7, "Seven is the most significant number across religions and cultures. The number 7 is also the most popular favorite number.  This may be because it is arithmetically unique. Of the first 10 numbers, seven is the most prime. You cannot multiply or divide it within the group. It is unique.");
+var eight = new NumberObject("Eight", 8, "In mathematics the symbol of the infinity is represented by an 8.  A favorable number, associated with prosperity 8 epresents the earth, not in its surface but in its volume, since 8 is the first cubic number.");
+var nine = new NumberObject("Nine", 9, "Nine is a magical number and has been worshipped as such throughout the ages. If you multiply a number by 9 and add all the digits of the new number together, the sum will always add up to 9. So, for example:8 x 9 is 72 and 7 + 2 is 9.");
+var ten = new NumberObject("Ten", 10, "Pythagoras considered 10 to be the most sacred number, as 10 = 1+2+3+4, which represented existence (1), creation (2), life (3) and the four elements: earth, air, fire and water (4)");
+var eleven = new NumberObject("Eleven", 11, "Eleven is the smallest prime number. In numerology, number eleven is considered the master number.  The reason is this number carries a vibrational frequency of balance. Number eleven signifies invention, refinement, fulfillment, vision, and congruence in a person. In astrology, the number eleven is considered a magical number that strikes a balance of emotion, thoughts, and spirits.");
+var twelve = new NumberObject("Twelve", 12, "Twelve is a superior highly composite number, divisible by 2, 3, 4, and 6. Historically considered to be the brightest 'wandering star'. It is central to many systems of timekeeping, including the Western calendar and units of time of day, and frequently appears in the world's major religions.");
+
+
+
+
+
+
+function showCard(entered){
+if(entered === 1) {
+    $('.hidden-card').show();
+    $(.header).text("ONE");
+    $(.subheader).text("1");
+    $(.text).append("Often, the number 1 is confused as a prime number. But that's not the case—one does not fulfill the requirements to be prime (being divisible by both 1 and itself). Divide 1 by 1 and you get…1. Nothing has been divided.");
+} else if(entered === 2) {
+    $('.hidden-card').show();
+    $(.header).text("TWO");
+    $(.subheader).text("2");
+    $(.text).text("Two is the smallest prime number, and the only even prime number (for this reason it is sometimes called 'the oddest prime'. The next prime is three. Two and three are the only two consecutive prime numbers.");
+}else if(entered === 3) {
+    $('.hidden-card').show();
+    $(.header).text("THREE");
+    $(.subheader).text("3");
+    $(.text).text("Did you know that  if you take any number, and multiply it by three. Then, take the digits of that new number and add them all together. Whatever number that equals will always be divisible by three, no matter what number you started with?");
+else if(entered === 4) {
+    $('.hidden-card').show();
+    $(.header).text("four");
+    $(.subheader).text("4");
+    $(.text).text("You probably never thought about this before, but there is only one number spelled with the same number of letters as itself. Can you guess which one? No? Well, It's 4.");
+else if(entered === 5) {
+    $('.hidden-card').show();
+    $(.header).text("five");
+    $(.subheader).text("5");
+    $(.text).text("Confucius said: “To practice five things under all circumstances constitutes perfect Virtue; these five are gravity, generosity of soul, sincerity, earnestness, and kindness. Also, Five was Coco Chanel’s lucky number. In 1921, she introduced Chanel No. 5 on the 5th day of the 5th month.");
+else if(entered === 6) {
+    $('.hidden-card').show();
+    $(.header).text("six");
+    $(.subheader).text("6");
+    $(.result-body).text("In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors. By this rule, six is the smallest perfect number. Here's an example to clarify:1 + 2 + 3 = 6.");
+else if(entered === 7) {
+    $('.hidden-card').show();
+    $(.header).text("SEVEN");
+    $(.subheader).text("7");
+    $(.text).text("Seven is the most significant number across religions and cultures. The number 7 is also the most popular favorite number.  This may be because it is arithmetically unique. Of the first 10 numbers, seven is the most prime. You cannot multiply or divide it within the group. It is unique.")
+else if(entered === 8) {
+    $('.hidden-card').show();
+    $(.header).text("EIGHT");
+    $(.subheader).text("8");
+    $(.text).text("In mathematics the symbol of the infinity is represented by an 8.  A favorable number, associated with prosperity 8 epresents the earth, not in its surface but in its volume, since 8 is the first cubic number.");
+    else if(entered === 9) {
+        $('.hidden-card').show();
+        $(.header).text("NINE");
+        $(.subheader).text("9");
+        $(.text).text("Nine is a magical number and has been worshipped as such throughout the ages. If you multiply a number by 9 and add all the digits of the new number together, the sum will always add up to 9. So, for example:8 x 9 is 72 and 7 + 2 is 9.");
+    else if(entered === 10) {
+        $('.hidden-card').show();
+        $(.header).text("TEN");
+        $(.subheader).text("10");
+        $(.text).text("Pythagoras considered 10 to be the most sacred number, as 10 = 1+2+3+4, which represented existence (1), creation (2), life (3) and the four elements: earth, air, fire and water (4)");
+    else if(entered === 11) {
+        $('.hidden-card').show();
+        $(.header).text("ELEVEN");
+        $(.subheader).text("11");
+        $(.text).text("Eleven is the smallest prime number. In numerology, number eleven is considered the master number.  The reason is this number carries a vibrational frequency of balance. Number eleven signifies invention, refinement, fulfillment, vision, and congruence in a person. In astrology, the number eleven is considered a magical number that strikes a balance of emotion, thoughts, and spirits.");
